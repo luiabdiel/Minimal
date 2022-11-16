@@ -17,9 +17,19 @@ export const GlobalStyle = createGlobalStyle`
         color: ${({ theme }) => theme['black-900']};
 
         -webkit-font-smoothing: antialiased;
+
+        margin: 0 auto;
     }
     
     body, input, textarea, button {
     font: 400 1rem Inter, sans-serif;
+
+    a {
+        text-decoration: none;
+    }
+
+    li {
+        list-style: none;
+    }
   }
 `
