@@ -29,4 +29,11 @@ export const ButtonNewDeposit = styled.button`
     padding: 0.5rem 1rem;
 
     font-size: 0.75rem;
+
+    cursor: pointer;
+
+    :hover {
+        background-color: ${({ theme }) => theme["blue-700"]};
+        transition: background-color .2s;
+    }
 `
