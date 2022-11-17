@@ -12,6 +12,7 @@ export const TableContent = styled.table`
     border-collapse: separate;
     border-spacing: 0 0.1rem;
     overflow: hidden;
+    margin-top: 1.5rem;
     
     td {
         background-color: ${({ theme }) => theme['white-400']};

@@ -19,7 +19,7 @@ export const HeaderContainer = styled.header`
     }
 `
 
-export const ButtonNewDeposit = styled.button`
+export const ButtonNewTransaction = styled.button`
     height: 2.5rem;
 
     background-color: ${({ theme }) => theme["blue-500"]};
