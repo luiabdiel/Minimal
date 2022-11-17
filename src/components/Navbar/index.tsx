@@ -10,7 +10,7 @@ export function Navbar() {
             </LogoContent>
 
             <ListContainer>
-                <ListContent><a href="#">Dashboard</a></ListContent>
+                <ListContent><a href="/">Dashboard</a></ListContent>
                 <ListContent><a href="#">Payments</a></ListContent>
                 <ListContent><a href="#">Management</a></ListContent>
             </ListContainer>

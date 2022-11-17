@@ -1,7 +1,7 @@
 import { Header } from "../../components/Header";
 import { Navbar } from "../../components/Navbar";
 import { Summary } from "../../components/Summary";
-import { Table } from "./components/Table";
+import { TableTransaction } from "./components/Table";
 
 export function Transactions() {
     return (
@@ -9,7 +9,7 @@ export function Transactions() {
             <Navbar />
             <Header />
             <Summary />  
-            <Table />          
+            <TableTransaction />        
         </>
     )
 }
