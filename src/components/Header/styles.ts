@@ -4,12 +4,13 @@ export const HeaderContainer = styled.header`
     display: flex;
     justify-content: space-between;
 
-    width: 79rem;
+    max-width: 79rem;
+    width: 100%;
     height: 2.5rem;
 
-    padding-top: 50px;
-
     margin: 0 auto;
+
+    margin-bottom: 2.5rem;
 
     h2 {
         font-size: 1.25rem;

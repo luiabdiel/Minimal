@@ -9,6 +9,8 @@ export const NavbarContainer = styled.nav`
 
     border-bottom: 1px solid ${({ theme }) => theme["white-300"]};
     padding: 0 2.375rem;
+
+    margin-bottom: 3.125rem;
 `
 
 export const LogoContent = styled.div`
