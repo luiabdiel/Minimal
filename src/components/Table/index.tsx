@@ -1,4 +1,4 @@
-import { PriceHighlight, TableContainer, TableContent } from "./styles";
+import { PriceHighlight, TableContainer, TableContent, TransactionType } from "./styles";
 
 export function Table() {
     return (
@@ -12,7 +12,7 @@ export function Table() {
                   R$ 12.000,00
                 </PriceHighlight>
               </td>
-              <td>Venda</td>
+              <td><TransactionType>Venda</TransactionType></td>
               <td>13/04/2022</td>
             </tr>
             <tr>
@@ -22,7 +22,7 @@ export function Table() {
                   -R$ 59,00
                 </PriceHighlight>
               </td>
-              <td>Alimentação</td>
+              <td><TransactionType>Alimentação</TransactionType></td>
               <td>10/04/2022</td>
             </tr>
           </tbody>

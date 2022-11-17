@@ -11,6 +11,7 @@ export const TableContent = styled.table`
     width: 100%;
     border-collapse: separate;
     border-spacing: 0 0.1rem;
+    overflow: hidden;
     
     td {
         background-color: ${({ theme }) => theme['white-400']};
@@ -35,4 +36,9 @@ interface PriceHighlightProps {
 
 export const PriceHighlight = styled.span<PriceHighlightProps>`
     color: ${(props) => props.variant === 'income' ? props.theme['green-300'] : props.theme['red-300']};
+`
+
+export const TransactionType = styled.span`
+    font-size: 0.875rem;
+    color: ${({ theme }) => theme["gray-700"]};
 `
