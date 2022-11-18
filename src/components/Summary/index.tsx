@@ -1,6 +1,7 @@
 import { Cardholder, ClipboardText, Clock } from "phosphor-react";
 import { useContext } from "react";
 import { TransactionsContext } from "../../contexts/TransactionsContext";
+import { priceFormatter } from "../../utils/formatter";
 import { SummaryCard, SummaryCardBox, SummaryCardContent, SummaryCardIcons, SummaryContainer, SummaryHeader } from "./styles";
 
 export function Summary() {
@@ -43,7 +44,7 @@ export function Summary() {
                         </SummaryCardIcons>
                         <SummaryCardContent>
                             <span>Pagemento</span>
-                            <strong>{`$${summary.income}`}</strong>
+                            <strong>{priceFormatter.format(summary.income)}</strong>
                         </SummaryCardContent>
                     </SummaryCardBox>
                 </SummaryCard>
@@ -55,7 +56,7 @@ export function Summary() {
                         </SummaryCardIcons>
                         <SummaryCardContent>
                             <span>Requests</span>
-                            <strong>{`$${summary.outcome}`}</strong>
+                            <strong>{priceFormatter.format(summary.outcome)}</strong>
                         </SummaryCardContent>
                     </SummaryCardBox>
                 </SummaryCard>
@@ -67,7 +68,7 @@ export function Summary() {
                         </SummaryCardIcons>
                         <SummaryCardContent>
                             <span>Subscriptions</span>
-                            <strong>{`$${summary.total}`}</strong>
+                            <strong>{priceFormatter.format(summary.total)}</strong>
                         </SummaryCardContent>
                     </SummaryCardBox>
                 </SummaryCard>

@@ -3,6 +3,7 @@ import { PriceHighlight, TableContainer, TableContent, TransactionType } from ".
 import { useContext } from "react";
 
 import { TransactionsContext } from "../../../../contexts/TransactionsContext"
+import { dateFormatter, priceFormatter } from "../../../../utils/formatter";
 
 export function TableTransaction() {
   const { transactions } = useContext(TransactionsContext)
@@ -18,11 +19,11 @@ export function TableTransaction() {
                 <td width="50%">{transaction.description}</td>
                 <td>
                   <PriceHighlight variant={transaction.type}>
-                    {transaction.price}
+                    {priceFormatter.format(transaction.price)}
                   </PriceHighlight>
                 </td>
                 <td><TransactionType>{transaction.category}</TransactionType></td>
-                <td>{transaction.createdAt}</td>
+                <td>{dateFormatter.format(new Date(transaction.createdAt))}</td>
               </tr>
             )
           })}
