@@ -1,7 +1,12 @@
 import { Cardholder, ClipboardText, Clock } from "phosphor-react";
+import { useContext } from "react";
+import { TransactionsContext } from "../../contexts/TransactionsContext";
 import { SummaryCard, SummaryCardBox, SummaryCardContent, SummaryCardIcons, SummaryContainer, SummaryHeader } from "./styles";
 
 export function Summary() {
+    const { transactions } = useContext(TransactionsContext)
+    console.log(transactions)
+
     return (
         <SummaryHeader>
             <header>
