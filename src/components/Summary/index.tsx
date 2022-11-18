@@ -5,7 +5,25 @@ import { SummaryCard, SummaryCardBox, SummaryCardContent, SummaryCardIcons, Summ
 
 export function Summary() {
     const { transactions } = useContext(TransactionsContext)
-    console.log(transactions)
+    
+    const summary = transactions.reduce(
+        (acc, transaction) => {
+            if(transaction.type === 'income') {
+                acc.income += transaction.price
+                acc.total += transaction.price
+            } else {
+                acc.outcome += transaction.price
+                acc.total -= transaction.price
+            }
+
+            return acc
+        },
+        { 
+            income: 0, 
+            outcome: 0, 
+            total: 0 
+        }
+    )
 
     return (
         <SummaryHeader>
@@ -24,8 +42,8 @@ export function Summary() {
                             <Cardholder size={20} color="#000"/>
                         </SummaryCardIcons>
                         <SummaryCardContent>
-                            <span>Payments</span>
-                            <strong>$4,500</strong>
+                            <span>Pagemento</span>
+                            <strong>{`$${summary.income}`}</strong>
                         </SummaryCardContent>
                     </SummaryCardBox>
                 </SummaryCard>
@@ -37,7 +55,7 @@ export function Summary() {
                         </SummaryCardIcons>
                         <SummaryCardContent>
                             <span>Requests</span>
-                            <strong>$1,200</strong>
+                            <strong>{`$${summary.outcome}`}</strong>
                         </SummaryCardContent>
                     </SummaryCardBox>
                 </SummaryCard>
@@ -48,8 +66,8 @@ export function Summary() {
                             <Clock size={20} color="#000"/>
                         </SummaryCardIcons>
                         <SummaryCardContent>
-                            <span>Payments</span>
-                            <strong>$4,500</strong>
+                            <span>Subscriptions</span>
+                            <strong>{`$${summary.total}`}</strong>
                         </SummaryCardContent>
                     </SummaryCardBox>
                 </SummaryCard>
