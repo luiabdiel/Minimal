@@ -1,9 +1,14 @@
-import { SearchForm } from "../SearchForm";
-import { PriceHighlight, TableContainer, TableContent, TransactionType } from "./styles";
-import { useContext } from "react";
+import { SearchForm } from '../SearchForm'
+import {
+  PriceHighlight,
+  TableContainer,
+  TableContent,
+  TransactionType,
+} from './styles'
+import { useContext } from 'react'
 
-import { TransactionsContext } from "../../../../contexts/TransactionsContext"
-import { dateFormatter, priceFormatter } from "../../../../utils/formatter";
+import { TransactionsContext } from '../../../../contexts/TransactionsContext'
+import { dateFormatter, priceFormatter } from '../../../../utils/formatter'
 
 export function TableTransaction() {
   const { transactions } = useContext(TransactionsContext)
@@ -11,7 +16,7 @@ export function TableTransaction() {
   return (
     <TableContainer>
       <SearchForm />
-        <TableContent>
+      <TableContent>
         <tbody>
           {transactions.map((transaction) => {
             return (
@@ -23,13 +28,15 @@ export function TableTransaction() {
                     {priceFormatter.format(transaction.price)}
                   </PriceHighlight>
                 </td>
-                <td><TransactionType>{transaction.category}</TransactionType></td>
+                <td>
+                  <TransactionType>{transaction.category}</TransactionType>
+                </td>
                 <td>{dateFormatter.format(new Date(transaction.createdAt))}</td>
               </tr>
             )
           })}
         </tbody>
-        </TableContent>
+      </TableContent>
     </TableContainer>
-    )
+  )
 }

@@ -1,45 +1,47 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const TableContainer = styled.main`
-    max-width: 79rem;
-    width: 100%;
+  max-width: 79rem;
+  width: 100%;
 
-    margin: 2rem auto 0;
+  margin: 2rem auto 0;
 `
 
 export const TableContent = styled.table`
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0 0.1rem;
-    overflow: hidden;
-    margin-top: 1.5rem;
-    
-    td {
-        background-color: ${({ theme }) => theme['white-400']};
-        padding: 0.75rem;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 0.1rem;
+  overflow: hidden;
+  margin-top: 1.5rem;
 
-        &:first-child {
-            border-top-left-radius: 6px;
-            border-bottom-left-radius: 6px;
-        }
+  td {
+    background-color: ${({ theme }) => theme['white-400']};
+    padding: 0.75rem;
 
-        &:last-child {
-            border-top-right-radius: 6px;
-            border-bottom-right-radius: 6px;
-        }
+    &:first-child {
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
     }
-    
+
+    &:last-child {
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
+  }
 `
 
 interface PriceHighlightProps {
-    variant?: 'income' | 'outcome'
+  variant?: 'income' | 'outcome'
 }
 
 export const PriceHighlight = styled.span<PriceHighlightProps>`
-    color: ${props => props.variant === 'income' ? props.theme['green-300'] : props.theme['red-300']};
+  color: ${(props) =>
+    props.variant === 'income'
+      ? props.theme['green-300']
+      : props.theme['red-300']};
 `
 
 export const TransactionType = styled.span`
-    font-size: 0.875rem;
-    color: ${({ theme }) => theme["gray-700"]};
+  font-size: 0.875rem;
+  color: ${({ theme }) => theme['gray-700']};
 `
