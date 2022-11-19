@@ -1,28 +1,36 @@
 {
-    "transactions": [
-      {
-        "id": 1,
-        "description": "Skin m4A1 cs:go",
-        "type": "income",
-        "category": "Venda",
-        "price": 1200,
-        "createdAt": "2022-11-17T19:36:44.505Z"
-      },
-      {
-        "id": 2,
-        "description": "Pizza",
-        "type": "outcome",
-        "category": "Alimentação",
-        "price": 35,
-        "createdAt": "2022-11-17T19:30:44.505Z"
-      },
-      {
-        "id": 3,
-        "description": "Bolo de chocolate",
-        "type": "outcome",
-        "category": "outcome",
-        "price": 4,
-        "createdAt": "2022-11-18T19:30:44.505Z"
-      }
-    ]
-  }
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Skin m4A1 cs:go",
+      "type": "income",
+      "category": "Venda",
+      "price": 1200,
+      "createdAt": "2022-11-17T19:36:44.505Z"
+    },
+    {
+      "id": 2,
+      "description": "Pizza",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 35,
+      "createdAt": "2022-11-17T19:30:44.505Z"
+    },
+    {
+      "id": 3,
+      "description": "Bolo de chocolate",
+      "type": "outcome",
+      "category": "outcome",
+      "price": 4,
+      "createdAt": "2022-11-18T19:30:44.505Z"
+    },
+    {
+      "description": "Pastel de Flango",
+      "price": 7,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2022-11-19T00:07:23.471Z",
+      "id": 4
+    }
+  ]
+}
