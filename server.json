@@ -31,6 +31,14 @@
       "type": "outcome",
       "createdAt": "2022-11-19T00:07:23.471Z",
       "id": 4
+    },
+    {
+      "description": "Cerveja do Qatar",
+      "price": 75,
+      "category": "Alimentação",
+      "type": "income",
+      "createdAt": "2022-11-21T15:00:25.264Z",
+      "id": 5
     }
   ]
 }

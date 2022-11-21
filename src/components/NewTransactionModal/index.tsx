@@ -70,8 +70,7 @@ export function NewTransactionModal() {
             {...register('description')}
           />
           <input
-            type="Number
-                        "
+            type="Number"
             placeholder="Preço"
             required
             {...register('price', { valueAsNumber: true })}
