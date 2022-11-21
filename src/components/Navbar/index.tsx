@@ -1,5 +1,8 @@
 import logo from '../../assets/logo.svg'
+import { Link } from 'react-router-dom'
+
 import {
+  ListButton,
   ListContainer,
   ListContent,
   LogoContent,
@@ -16,14 +19,14 @@ export function Navbar() {
 
       <ListContainer>
         <ListContent>
-          <a href="/">Dashboard</a>
+          <Link to="/">Início</Link>
         </ListContent>
         <ListContent>
-          <a href="#">Payments</a>
+          <Link to="/transactions">Gestão</Link>
         </ListContent>
-        <ListContent>
-          <a href="#">Management</a>
-        </ListContent>
+        <ListButton>
+          <Link to="#">Login</Link>
+        </ListButton>
       </ListContainer>
     </NavbarContainer>
   )

@@ -44,3 +44,22 @@ export const ListContent = styled.li`
     }
   }
 `
+
+export const ListButton = styled.li`
+  background-color: ${({ theme }) => theme['blue-500']};
+
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+
+  a {
+    color: ${({ theme }) => theme.white};
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  &:hover {
+    background-color: ${({ theme }) => theme['blue-700']};
+    transition: background-color 0.2s;
+  }
+`
