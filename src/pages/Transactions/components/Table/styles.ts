@@ -14,6 +14,8 @@ export const TableContent = styled.table`
   overflow: hidden;
   margin-top: 1.5rem;
 
+  padding-bottom: 2rem;
+
   td {
     background-color: ${({ theme }) => theme['white-400']};
     padding: 0.75rem;
@@ -44,4 +46,19 @@ export const PriceHighlight = styled.span<PriceHighlightProps>`
 export const TransactionType = styled.span`
   font-size: 0.875rem;
   color: ${({ theme }) => theme['gray-700']};
+`
+
+export const ButtonDelete = styled.button`
+  line-height: 0;
+
+  color: ${({ theme }) => theme['blue-100']};
+
+  border: none;
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  &:hover {
+    color: ${({ theme }) => theme['blue-700']};
+  }
 `
