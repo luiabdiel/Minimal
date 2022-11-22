@@ -4,12 +4,21 @@ export const MainContainer = styled.div`
     padding: 0 1rem;
     text-align: center;
 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+
     width: 100vw;
+
     
-    @media (min-width: 768px) {
+    @media (max-width: 768px) {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        margin: 0 auto;
+
     }
 `
 
