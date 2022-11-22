@@ -43,6 +43,10 @@ export const ListContent = styled.li`
       transition: color 0.2s;
     }
   }
+  
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 
 export const ListButton = styled.li`
@@ -61,5 +65,54 @@ export const ListButton = styled.li`
   &:hover {
     background-color: ${({ theme }) => theme['blue-700']};
     transition: background-color 0.2s;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`
+
+export const MobileMenuContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  position: fixed;
+
+  top: 1.3rem;
+  right: 2rem;
+
+`
+
+export const MobileMenuExtends = styled.ul`
+  inset: 0;
+
+  position: absolute;
+
+  top: 2.5rem;
+
+  z-index: 999;
+
+  a {
+    font-size: 1rem;
+    font-weight: 700;
+    color: ${({ theme }) => theme['black-900']};
+  }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+`
+
+export const MobileMenuButton = styled.button`
+  line-height: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+
+  cursor: pointer;
+
+  @media (min-width: 768px) {
+    display: none;
   }
 `
