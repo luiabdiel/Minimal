@@ -71,3 +71,19 @@ export const SummaryCardContent = styled.div`
     font-weight: 500;
   }
 `
+
+interface PriceTypeHighlightProps {
+  variant?: 'income' | 'outcome'
+}
+
+export const PriceType = styled.strong<PriceTypeHighlightProps>`
+  display: block;
+
+  font-size: 1.5rem;
+  font-weight: 500;
+
+  color: ${(props) =>
+    props.variant === 'income'
+      ? props.theme['green-300']
+      : props.theme['red-300']};
+`

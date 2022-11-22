@@ -2,6 +2,7 @@ import { Cardholder, ClipboardText, Clock } from 'phosphor-react'
 import { useSummary } from '../../hooks/use.Summary'
 import { priceFormatter } from '../../utils/formatter'
 import {
+  PriceType,
   SummaryCard,
   SummaryCardBox,
   SummaryCardContent,
@@ -31,7 +32,7 @@ export function Summary() {
             </SummaryCardIcons>
             <SummaryCardContent>
               <span>Pagemento</span>
-              <strong>{priceFormatter.format(summary.income)}</strong>
+              <PriceType variant='income'>{priceFormatter.format(summary.income)}</PriceType>
             </SummaryCardContent>
           </SummaryCardBox>
         </SummaryCard>
@@ -42,8 +43,11 @@ export function Summary() {
               <ClipboardText size={20} color="#000" />
             </SummaryCardIcons>
             <SummaryCardContent>
-              <span>Requests</span>
-              <strong>{priceFormatter.format(summary.outcome)}</strong>
+              <span>Saídas</span>
+              <PriceType>
+                {summary.income && '- '}
+                {priceFormatter.format(summary.outcome)}
+                </PriceType>
             </SummaryCardContent>
           </SummaryCardBox>
         </SummaryCard>
@@ -54,7 +58,7 @@ export function Summary() {
               <Clock size={20} color="#000" />
             </SummaryCardIcons>
             <SummaryCardContent>
-              <span>Subscriptions</span>
+              <span>Total</span>
               <strong>{priceFormatter.format(summary.total)}</strong>
             </SummaryCardContent>
           </SummaryCardBox>
