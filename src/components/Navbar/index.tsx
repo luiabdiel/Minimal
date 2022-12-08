@@ -1,22 +1,22 @@
-import logo from '../../assets/logo.svg'
 import { Link } from 'react-router-dom'
+import { FaBars } from 'react-icons/fa'
+
+import logo from '../../assets/logo.svg'
 
 import {
   ListButton,
   ListContainer,
   ListContent,
   LogoContent,
-  MobileMenuButton,
-  MobileMenuContainer,
-  MobileMenuExtends,
   NavbarContainer,
+  OpenMenuMobile,
 } from './styles'
-import { List, X } from 'phosphor-react'
-import { useState } from 'react'
 
-export function Navbar() {
-  const [hiddenMenu, setHiddenMenu] = useState(false)
+interface INavbarProps {
+  setMenuIsVisible: (active: boolean) => void
+}
 
+export function Navbar({ setMenuIsVisible }:INavbarProps) {
   return (
     <NavbarContainer>
       <LogoContent>
@@ -35,22 +35,9 @@ export function Navbar() {
           <Link to="#">Login</Link>
         </ListButton>
       </ListContainer>
-      <MobileMenuContainer>
-        <MobileMenuButton onClick={() => {setHiddenMenu((curr) => !curr)}}>{hiddenMenu ? <X size={32} /> : <List size={32} />}</MobileMenuButton>
-        {hiddenMenu && (
-        <MobileMenuExtends>
-        <li>
-          <Link to="/">Início</Link>
-        </li>
-        <li>
-          <Link to="/transactions">Gestão</Link>
-        </li>
-        <li>
-          <Link to="#">Login</Link>
-        </li>
-        </MobileMenuExtends>
-      )}
-      </MobileMenuContainer>
+      <OpenMenuMobile>
+        <FaBars size={30} onClick={() => setMenuIsVisible(true)} />
+      </OpenMenuMobile>
       </NavbarContainer>
   )
 }

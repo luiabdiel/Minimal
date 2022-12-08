@@ -5,6 +5,8 @@ export const TableContainer = styled.main`
   width: 100%;
 
   margin: 2rem auto 0;
+
+  padding: 0 0.5rem;
 `
 
 export const TableContent = styled.table`

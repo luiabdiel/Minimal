@@ -12,6 +12,8 @@ export const HeaderContainer = styled.header`
 
   margin-bottom: 2.5rem;
 
+  padding: 0 0.5rem;
+
   h2 {
     font-size: 1.25rem;
     font-weight: 600;

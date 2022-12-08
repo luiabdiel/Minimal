@@ -6,6 +6,8 @@ export const SummaryHeader = styled.div`
 
   margin: 0 auto;
 
+  padding: 0 0.5rem;
+
   header {
     display: flex;
     align-items: center;
@@ -28,7 +30,7 @@ export const SummaryHeader = styled.div`
 
 export const SummaryContainer = styled.section`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(405px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 1.5rem;
 
   margin-top: 1rem;
