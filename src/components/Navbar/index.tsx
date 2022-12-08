@@ -32,7 +32,7 @@ export function Navbar({ setMenuIsVisible }:INavbarProps) {
           <Link to="/transactions">Gestão</Link>
         </ListContent>
         <ListButton>
-          <Link to="#">Login</Link>
+          <Link to="/login">Login</Link>
         </ListButton>
       </ListContainer>
       <OpenMenuMobile>

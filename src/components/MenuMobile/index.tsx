@@ -23,7 +23,7 @@ export const MenuMobile = ({menuIsVisible, setMenuIsVisible}:IMenuMobileProps) =
       <MenuMobileLinks>
           <Link to="/">Início</Link>
           <Link to="/transactions">Gestão</Link>
-          <Link to="#">Login</Link>
+          <Link to="/login">Login</Link>
       </MenuMobileLinks>
     </MenuMobilineContainer>
   )
