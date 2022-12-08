@@ -25,7 +25,7 @@ export const MenuMobilineContainer = styled.div<IMenuMobilineContainerProps>`
         position: absolute;
         color: ${({ theme }) => theme["blue-500"]};
         top: 1.2rem;
-        right: 2.3rem;
+        right: 0.8rem;
         cursor: pointer;
     }
 
@@ -41,7 +41,7 @@ export const MenuMobilineContainer = styled.div<IMenuMobilineContainerProps>`
             position: absolute;
 
             top: 1.6rem;
-            left: 4.5rem;
+            left: 4rem;
 
             font-size: 1.125rem;
             font-weight: 500;

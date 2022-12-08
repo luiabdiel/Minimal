@@ -11,6 +11,10 @@ export const NavbarContainer = styled.nav`
   padding: 0 2.375rem;
 
   margin-bottom: 3.125rem;
+
+  @media (max-width: 768px) {
+    padding: 0 0.5rem;
+  }
 `
 
 export const LogoContent = styled.div`
