@@ -4,12 +4,14 @@ import { FaBars } from 'react-icons/fa'
 import logo from '../../assets/logo.svg'
 
 import {
-  ListButton,
+  ListLogin,
   ListContainer,
   ListContent,
   LogoContent,
   NavbarContainer,
   OpenMenuMobile,
+  ListRegister,
+  ListButtonContainer,
 } from './styles'
 
 interface INavbarProps {
@@ -31,9 +33,14 @@ export function Navbar({ setMenuIsVisible }:INavbarProps) {
         <ListContent>
           <Link to="/transactions">Gestão</Link>
         </ListContent>
-        <ListButton>
-          <Link to="/login">Login</Link>
-        </ListButton>
+        <ListButtonContainer>
+          <ListRegister>
+            <Link to="/register">Register</Link>
+          </ListRegister>
+          <ListLogin>
+            <Link to="/login">Login</Link>
+          </ListLogin>
+        </ListButtonContainer>
       </ListContainer>
       <OpenMenuMobile>
         <FaBars size={30} onClick={() => setMenuIsVisible(true)} />

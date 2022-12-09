@@ -49,6 +49,8 @@ export const ListContent = styled.li`
     :hover {
       color: ${({ theme }) => theme['black-900']};
       transition: color 0.2s;
+
+      box-shadow: none;
     }
   }
   
@@ -57,7 +59,38 @@ export const ListContent = styled.li`
   }
 `
 
-export const ListButton = styled.li`
+export const ListButtonContainer = styled.div`
+  display: flex;
+  gap: 0.75rem;
+`
+
+export const ListRegister = styled.li`
+  padding: 0.5rem 1.5rem;
+
+  outline: none;
+
+  border-radius: 8px;
+
+  border: 1px solid transparent;
+  box-shadow: 0 1px 5px rgb(0 0 0 / 0.1);
+
+  cursor: pointer;
+
+  a {
+    color: ${({ theme }) => theme['blue-500']};
+    font-size: 0.75rem;
+    font-weight: 600;
+
+    box-shadow: none;
+  }
+
+  &:hover {
+    border: 1px solid ${({ theme }) => theme['blue-700']};
+    transition: 0.2s;
+  }
+`
+
+export const ListLogin = styled.li`
   background-color: ${({ theme }) => theme['blue-500']};
 
   padding: 0.5rem 1.5rem;
