@@ -35,6 +35,16 @@ export const LoginContainer = styled.div`
 
         margin-block: 3rem 3rem;
     }
+
+    @media (max-width: 600px) {
+        height: 30rem;
+        width: 25rem;
+    }
+
+    @media (max-width: 432px) {
+        height: 27rem;
+        width: 20rem;
+    }
 `
 
 export const FormContainer = styled.form`
