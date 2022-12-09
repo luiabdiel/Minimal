@@ -27,6 +27,7 @@ export const Login = () => {
                 />
                 <Button 
                     type="submit"
+                    text="Entrar"
                 />
                 <SubContainerSign>
                     <p>Não possui conta?</p>
