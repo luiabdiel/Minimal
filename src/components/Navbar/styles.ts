@@ -19,7 +19,7 @@ export const NavbarContainer = styled.nav`
 
 export const LogoContent = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.75rem;
 
   h1 {
@@ -62,32 +62,6 @@ export const ListContent = styled.li`
 export const ListButtonContainer = styled.div`
   display: flex;
   gap: 0.75rem;
-`
-
-export const ListRegister = styled.li`
-  padding: 0.5rem 1.5rem;
-
-  outline: none;
-
-  border-radius: 8px;
-
-  border: 1px solid transparent;
-  box-shadow: 0 1px 5px rgb(0 0 0 / 0.1);
-
-  cursor: pointer;
-
-  a {
-    color: ${({ theme }) => theme['blue-500']};
-    font-size: 0.75rem;
-    font-weight: 600;
-
-    box-shadow: none;
-  }
-
-  &:hover {
-    border: 1px solid ${({ theme }) => theme['blue-700']};
-    transition: 0.2s;
-  }
 `
 
 export const ListLogin = styled.li`

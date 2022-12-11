@@ -10,7 +10,6 @@ import {
   LogoContent,
   NavbarContainer,
   OpenMenuMobile,
-  ListRegister,
   ListButtonContainer,
 } from './styles'
 
@@ -30,13 +29,7 @@ export function Navbar({ setMenuIsVisible }:INavbarProps) {
         <ListContent>
           <Link to="/">Início</Link>
         </ListContent>
-        <ListContent>
-          <Link to="/transactions">Gestão</Link>
-        </ListContent>
         <ListButtonContainer>
-          <ListRegister>
-            <Link to="/register">Register</Link>
-          </ListRegister>
           <ListLogin>
             <Link to="/login">Login</Link>
           </ListLogin>
