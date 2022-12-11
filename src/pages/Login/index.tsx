@@ -1,39 +1,66 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { Button } from "../../components/Button";
-import { Input } from "../../components/Input";
-import { FormContainer, LoginContainer, SubContainerSign } from "./styles";
+import { Row, message } from "antd"
+import Button from "antd/es/button"
+import Form from "antd/es/form"
+import { Col } from "antd/es/grid"
+import Input from "antd/es/input"
+import { useNavigate } from "react-router-dom"
+import { useAuth } from "../../contexts/AuthProvider/useAuth"
 
 export const Login = () => {
-    const handleChange = () => {
-        console.log('digitando...')
+    const auth = useAuth()
+    const navigate = useNavigate()
+
+    async function onFinish (values: {email: string, password: string}) {
+
+        try {
+            await auth.authenticate(values.email, values.password)
+
+            navigate('/transactions')
+        } catch (error) {
+            message.error('Email ou senha inválida')
+        }
     }
 
     return (
-        <LoginContainer>
-            <FormContainer>
-                <h1>Faça o seu Login</h1>
-                <Input 
-                    placeholder="Digite o seu email"
-                    name="email"
-                    type="email"
-                    onChange={handleChange}
-                />
-                <Input 
-                    placeholder="Digite a sua senha"
-                    name="password"
-                    type="password"
-                    onChange={handleChange}
-                />
-                <Button 
-                    type="submit"
-                    text="Entrar"
-                />
-                <SubContainerSign>
-                    <p>Não possui conta?</p>
-                    <Link to="/register">Cadastrar</Link>
-                </SubContainerSign>
-            </FormContainer>
-        </LoginContainer>
+        <Row
+            justify='center'
+            align='middle'
+            style={{
+                height: '100vh'
+            }}
+        >
+            <Col span={12}>
+                <Form
+                    name="basic"
+                    labelCol={{span: 8}}
+                    wrapperCol={{span: 10}}
+                    onFinish={onFinish}
+                >
+                    <Form.Item
+                        label='Email'
+                        name='email'
+                    >
+                        <Input />
+                    </Form.Item>
+                    <Form.Item
+                        label='Senha'
+                        name='password'
+                    >
+                        <Input.Password />
+                    </Form.Item>
+
+                    <Form.Item
+                        wrapperCol={{offset:8, span:16}}
+                    >
+                        <Button 
+                            type='primary'
+                            htmlType='submit'
+                        >
+                            Entrar
+                        </Button>
+                    </Form.Item>
+                </Form>
+            </Col>
+        </Row>
     )
 }
