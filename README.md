@@ -25,6 +25,10 @@
 
 <br>
 
+## Login
+Email: eve.holt@reqres.in
+password: 123 
+
 # Getting Started with Vite
 
 ## Clone the repo, install dependencies, and start the Hugo server locally.
@@ -52,7 +56,6 @@ You will also see any lint errors in the console.
 ### `npm run dev:server`
 
 project developed with json library to simulate a backend.
-
 
 ## Learn More
 
