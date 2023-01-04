@@ -35,7 +35,7 @@ password: 123
 
 ```shell
 git clone https://github.com/luiabdiel/AppFinance.git
-cd mohid
+cd AppFinance
 npm i
 npm run dev
 npm run dev:server
