@@ -34,7 +34,7 @@ password: 123
 ## Clone the repo, install dependencies, and start the Hugo server locally.
 
 ```shell
-git clone https://github.com/luiabdiel/Mohid.git
+git clone https://github.com/luiabdiel/AppFinance.git
 cd mohid
 npm i
 npm run dev
