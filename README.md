@@ -1,5 +1,3 @@
-<p align="center">⚠️ EM DESENVOLVIMENTO ⚠️ </p>
-
 <div align="center">
  
 [![Emblemas](http://ForTheBadge.com/images/badges/built-with-love.svg)](#)
