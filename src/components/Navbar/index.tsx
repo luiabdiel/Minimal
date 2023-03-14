@@ -21,7 +21,7 @@ export function Navbar({ setMenuIsVisible }:INavbarProps) {
   return (
     <NavbarContainer>
       <LogoContent>
-        <img src={logo} alt="" />
+        <a href="/"><img src={logo} alt="" /></a>
         <h1>Minimal</h1>
       </LogoContent>
 

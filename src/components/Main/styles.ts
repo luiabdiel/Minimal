@@ -77,7 +77,7 @@ export const MainContentImage = styled.div`
     max-width: 500px;
     width: 100%;
 
-    margin-top: 2rem;
+    margin-top: 10rem;
 
     padding-bottom: 1rem;
 
