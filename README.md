@@ -5,7 +5,7 @@
  </div>
 
 <h1 align="Star">
-    Mohid - Ecommerce
+    Minimal - Finance Application
 </h1>
 
 ![Design preview from Mohid Ecommerce](./src/assets/template.png)
@@ -25,6 +25,7 @@
 
 ## Login
 Email: eve.holt@reqres.in
+
 password: 123 
 
 # Getting Started with Vite
