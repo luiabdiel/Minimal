@@ -32,7 +32,7 @@ password: 123
 ## Clone the repo, install dependencies, and start the Hugo server locally.
 
 ```shell
-git clone https://github.com/luiabdiel/AppFinance.git
+git clone https://github.com/luiabdiel/Minimal.git
 cd AppFinance
 npm i
 npm run dev
