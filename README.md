@@ -1,11 +1,11 @@
 # **Minimal**: Gerenciador Financeiro Online
 
-## **Descrição**
-O Minimal é um gerenciador financeiro online pessoal para controle de gastos. Com uma interface ágil, fácil de usar e intuitiva, o projeto permite um completo controle sobre suas finanças pessoais.
-
 ![Design preview from Minimal](./src/assets/template.png)
 ![Design preview from Minimal](./src/assets/template-transacao.png)
 ![Design preview from Minimal](./src/assets/template-painel.png)
+
+## **Descrição**
+O Minimal é um gerenciador financeiro online pessoal para controle de gastos. Com uma interface ágil, fácil de usar e intuitiva, o projeto permite um completo controle sobre suas finanças pessoais.
 
 ## **Funcionalidades**
 O Minimal oferece as seguintes funcionalidades:
