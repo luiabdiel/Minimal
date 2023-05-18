@@ -23,7 +23,8 @@ O Minimal foi desenvolvido utilizando as seguintes tecnologias:
 * React
 * TypeScript
 * Axios
-* Json-server
+* Json-server 
+* reqres
 * Zod
 * Radix
 * React-hook-form
