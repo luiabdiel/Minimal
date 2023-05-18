@@ -1,63 +1,55 @@
-<div align="center">
- 
-[![Emblemas](http://ForTheBadge.com/images/badges/built-with-love.svg)](#)
- 
- </div>
+# **Minimal**: Gerenciador Financeiro Online
 
-<h1 align="Star">
-    Minimal - Finance Application
-</h1>
+![Design preview from Minimal](./src/assets/template.png)
+![Design preview from Minimal](./src/assets/template-transacao.png)
+![Design preview from Minimal](./src/assets/template-painel.png)
 
-![Design preview from Mohid Ecommerce](./src/assets/template.png)
+## **Descrição**
+O Minimal é um gerenciador financeiro online pessoal para controle de gastos. Com uma interface ágil, fácil de usar e intuitiva, o projeto permite um completo controle sobre suas finanças pessoais.
 
-<p align="center"><a href="https://www.figma.com/file/F2M65bUd25vOCNfdvmeDTk/Minimal-Finance-Dashboard-(Community)?node-id=0%3A1&t=srSRkEelB2XBeXZb-0">Minimal</a>  for study purposes. <a href="https://inspiring-platypus-c20811.netlify.app/">Deploy</a></p>
+## **Funcionalidades**
+O Minimal oferece as seguintes funcionalidades:
 
-<hr>
+* Criação de nova transação: Adicione uma nova transação informando a descrição, valor e tipo (recebimento ou gasto).
+* Listagem de transações: Visualize todas as transações registradas, ordenadas por data.
+* Busca de transações: Pesquise transações específicas com base em critérios como data, descrição ou tipo.
+* Total de saldo: Verifique o saldo atual, considerando as transações de recebimento e gasto.
+* Total de gastos: Obtenha o valor total de gastos registrados no sistema.
+* Total de recebimentos: Obtenha o valor total de recebimentos registrados no sistema.
 
-[![Linkdin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/luiggiabdiel/)
+## **Tecnologias Utilizadas**
+O Minimal foi desenvolvido utilizando as seguintes tecnologias:
 
-<br>
+* React
+* TypeScript
+* Axios
+* Json-server
+* Zod
+* Radix
+* React-hook-form
+* React-router
+* Styled-components
+* Ant Design
 
-## Resources
-[![Resources](https://skillicons.dev/icons?i=react,ts,styledcomponents,git)](https://skillicons.dev)
+## **Instalação**
+Siga as instruções abaixo para executar o projeto localmente:
 
-<br>
+1. Certifique-se de ter o Node.js instalado em seu computador.
+2. Faça o clone deste repositório para o seu ambiente local.
+3. Acesse o diretório raiz do projeto através do terminal.
+4. Execute o comando '__npm install__' para instalar as dependências.
+5. Em um terminal separado, execute o comando '__npm run dev:server__' para iniciar o servidor JSON simulado.
+6. De volta ao terminal principal, execute o comando '__npm run  dev__' para iniciar o servidor de desenvolvimento do front-end.
+7. Após a execução dos passos acima, você pode acessar o Minimal em '__http://localhost:5173__'.
 
-## Login
-Email: eve.holt@reqres.in
+## **Login**
+Utilize as seguintes credenciais para fazer login:
 
-password: 123 
+* Email: __eve.holt@reqres.in__
+* Senha: __123__
 
-# Getting Started with Vite
+## **Contribuição**
+Se você deseja contribuir para o aprimoramento do Minimal, fique à vontade para abrir uma issue ou enviar um pull request.
 
-## Clone the repo, install dependencies, and start the Hugo server locally.
-
-```shell
-git clone https://github.com/luiabdiel/Minimal.git
-cd AppFinance
-npm i
-npm run dev
-npm run dev:server
-```
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm run dev`
-
-Runs the app in the development mode.\
-Open [http://localhost:5173/](http://localhost:5173/) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm run dev:server`
-
-project developed with json library to simulate a backend.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## **Licença**
+Este projeto está licenciado sob a licença MIT. Consulte o arquivo '__LICENSE__' para obter mais informações.
